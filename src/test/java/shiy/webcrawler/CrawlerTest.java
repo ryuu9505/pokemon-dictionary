@@ -45,7 +45,7 @@ class CrawlerTest {
             String number = infocard_data.select("small").first().text();
             String name = infocard_data.select("a.ent-name").text();
             List<String> types = infocard_data.select("small > a.itype").eachText();
-            String img = infocard_img.select("a[href]").attr("href");
+            String img = infocard_img.select("a > img.img-sprite").attr("src");
 
             pokemons.add(new Pokemon(number, name, types, img));
         }
