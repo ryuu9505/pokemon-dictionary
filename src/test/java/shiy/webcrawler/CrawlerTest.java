@@ -18,9 +18,16 @@ import static org.assertj.core.api.Assertions.*;
 class CrawlerTest {
 
     @Test
-    public void url_title() throws Exception {
+    public void html() throws Exception {
         Crawler crawler = new Crawler();
         String title = crawler.html("https://www.google.com/").title();
+        assertThat(title).isEqualTo("Google");
+    }
+
+    @Test
+    public void elements() throws Exception {
+        Crawler crawler = new Crawler();
+        String title = crawler.elements("https://www.google.com/", "title").text();
         assertThat(title).isEqualTo("Google");
     }
 
