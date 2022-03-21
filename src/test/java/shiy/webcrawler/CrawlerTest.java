@@ -1,19 +1,19 @@
 package shiy.webcrawler;
 
-import lombok.extern.slf4j.Slf4j;
+//import lombok.extern.slf4j.Slf4j;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import shiy.webcrawler.pokemon.Pokemon;
-import shiy.webcrawler.pokemon.PokemonConstants;
+import shiy.webcrawler.domain.pokemon.Pokemon;
+import shiy.webcrawler.domain.pokemon.PokemonConstants;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.*;
 
-@Slf4j
+//@Slf4j
 @SpringBootTest
 class CrawlerTest {
 
@@ -31,7 +31,7 @@ class CrawlerTest {
         assertThat(title).isEqualTo("Google");
     }
 
-    @Test
+/*    @Test
     void pokemon_info() throws Exception {
         Crawler crawler = new Crawler();
         Elements infocards = crawler.elements(PokemonConstants.URL, PokemonConstants.SELECTOR_INFOCARD);
@@ -53,5 +53,5 @@ class CrawlerTest {
         pokemons.forEach(pokemon -> {
             System.out.println(pokemon.toString());
         } );
-    }
+    }*/
 }

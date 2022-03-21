@@ -1,4 +1,4 @@
-package shiy.webcrawler.pokemon;
+package shiy.webcrawler.domain.pokemon;
 
 //POKEMON_DB
 public final class PokemonConstants {
