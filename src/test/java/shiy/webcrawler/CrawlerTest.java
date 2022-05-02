@@ -31,8 +31,9 @@ class CrawlerTest {
         assertThat(title).isEqualTo("Google");
     }
 
-/*    @Test
-    void pokemon_info() throws Exception {
+   @Test
+   void pokemon_info() throws Exception {
+        /*
         Crawler crawler = new Crawler();
         Elements infocards = crawler.elements(PokemonConstants.URL, PokemonConstants.SELECTOR_INFOCARD);
 
@@ -53,5 +54,6 @@ class CrawlerTest {
         pokemons.forEach(pokemon -> {
             System.out.println(pokemon.toString());
         } );
-    }*/
+        */
+    }
 }
