@@ -33,11 +33,12 @@ class CrawlerTest {
 
    @Test
    void pokemon_info() throws Exception {
-        /*
+
         Crawler crawler = new Crawler();
         Elements infocards = crawler.elements(PokemonConstants.URL, PokemonConstants.SELECTOR_INFOCARD);
 
         List<Pokemon> pokemons = new ArrayList<>();
+        /*
         for (Element elem : infocards) {
 
             Elements infocard_data = elem.select(PokemonConstants.SELECTOR_INFOCARD_DATA);
